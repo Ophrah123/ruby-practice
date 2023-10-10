@@ -42,6 +42,18 @@ Goal1: Psuedocode
 6. Append the results of the for loop to the result variable
 '''
 
+'''
+Goal2:
+'''
+
+'''
+Goal3:
+'''
+
+'''
+Goal4:
+'''
+
 def is_palindrome(s)
     
 end
