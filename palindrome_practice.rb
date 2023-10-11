@@ -44,6 +44,11 @@ Goal1: Psuedocode
 
 '''
 Goal2:
+1. Result is equal to an empty array
+2. string s ="A man, a plan, a canal: Panama" before downcase function string s = "amanaplanacanalpanama"
+3. if 1<= indices <=100 true
+    4. if the length of string s == the length of indices true
+        5. 
 '''
 
 '''
