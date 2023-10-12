@@ -40,15 +40,18 @@ Goal1: Psuedocode
 4. Accept string s and an integer array indices if length of s and indices are equal to each other.
 5. Create a for loop for string s that outputs each letter at integer array indices and use the join function to put all string output together.
 6. Append the results of the for loop to the result variable
+7. create an if statement that returns true if results == string s or if results != string s return false
 '''
 
 '''
 Goal2:
 1. Result is equal to an empty array
-2. string s ="A man, a plan, a canal: Panama" before downcase function string s = "amanaplanacanalpanama"
+2. string s ="A man, a plan, a canal: Panama" before downcase function and removing 
+2. all non-alphanumeric characters string s = "amanaplanacanalpanama"
 3. if 1<= indices <=100 true
     4. if the length of string s == the length of indices true
         5. 
+            5.
 '''
 
 '''
