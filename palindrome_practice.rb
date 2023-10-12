@@ -1,32 +1,23 @@
 '''
-A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
-
-Given a string s, return true if it is a palindrome, or false otherwise.
-
+You are given a string s and an integer array indices of the same length. The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
+Return the shuffled string.
  
-
 Example 1:
 
-Input: s = "A man, a plan, a canal: Panama"
-Output: true
-Explanation: "amanaplanacanalpanama" is a palindrome.
+Input: s = "codeleet", indices = [4,5,6,7,0,2,1,3]
+Output: "leetcode"
+Explanation: As shown, "codeleet" becomes "leetcode" after shuffling.
 Example 2:
-
-Input: s = "race a car"
-Output: false
-Explanation: "raceacar" is not a palindrome.
-Example 3:
-
-Input: s = " "
-Output: true
-Explanation: s is an empty string "" after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.
+Input: s = "abc", indices = [0,1,2]
+Output: "abc"
+Explanation: After shuffling, each character remains in its position.
  
-
 Constraints:
-
-1 <= s.length <= 2 * 105
-s consists only of printable ASCII characters.
+s.length == indices.length == n
+1 <= n <= 100
+s consists of only lowercase English letters.
+0 <= indices[i] < n
+All values of indices are unique.
 '''
 
 # @param {String} s
@@ -40,14 +31,13 @@ Goal1: Psuedocode
 4. Accept string s and an integer array indices if length of s and indices are equal to each other.
 5. Create a for loop for string s that outputs each letter at integer array indices and use the join function to put all string output together.
 6. Append the results of the for loop to the result variable
-7. create an if statement that returns true if results == string s or if results != string s return false
 '''
 
 '''
 Goal2:
 1. Result is equal to an empty array
-2. string s ="A man, a plan, a canal: Panama" before downcase function and removing 
-2. all non-alphanumeric characters string s = "amanaplanacanalpanama"
+2. string s ="codeleet"" before downcase function and removing 
+   all non-alphanumeric characters string s = "amanaplanacanalpanama"
 3. if 1<= indices <=100 true
     4. if the length of string s == the length of indices true
         5. 
