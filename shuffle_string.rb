@@ -29,29 +29,37 @@ Goal1: Psuedocode
 2. Change string s to all lowercase values
 3. Use an if statement to verify that the length of indices is 1 <= n <= 100
 4. Accept string s and an integer array indices if length of s and indices are equal to each other.
-5. Create a for loop for string s that outputs each letter at integer array indices and use the join function to put all string output together.
-6. Append the results of the for loop to the result variable
+5. Create a for loop iterating over indices
+6. characters = s[indices[0]] = s[4]
+7. Append character to the result variable
+8. Use the join function to make the result variable outputone word
 '''
 
 '''
 Goal2:
 1. Result is equal to an empty array
-2. string s ="codeleet"" before downcase function and removing 
-   all non-alphanumeric characters string s = "amanaplanacanalpanama"
-3. if 1<= indices <=100 true
+2. string s ="codeleet"" 
+3. if 1<= indices <=100 true # learn about guard statements
     4. if the length of string s == the length of indices true
         5. 
             5.
 '''
 
 '''
-Goal3:
+Goals3&4:
 '''
+result = []
+s="codeleet"
+indices = [4,5,6,7,0,2,1,3]
+s.length == indices.length == n
+if n >= 1 && n <=100
+    for num in indices do
+        characters = s[indices[0]]
+        result.append(characters)
+    end
 
-'''
-Goal4:
-'''
-
-def is_palindrome(s)
-    
 end
+
+
+
+
