@@ -28,13 +28,13 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 '''
 
 # Definition for a Node.
-# class Node
-#     attr_accessor :val, :children
-#     def initialize(val)
-#         @val = val
-#         @children = []
-#     end
-# end
+class Node
+  attr_accessor :val, :children
+  def initialize(val)
+    @val = val
+    @children = []
+  end
+ end
 
 # @param {Node} root
 # @return {List[int]}
@@ -44,6 +44,9 @@ end
 
 '''
 Goal 1:
+1. Create an if statement that the number of nodes in the tree range from 0-104
+2. Create an if statemebt that evaluates that the value of all nodes are from 0-104
+3. 
 '''
 
 '''
