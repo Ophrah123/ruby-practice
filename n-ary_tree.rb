@@ -44,15 +44,24 @@ end
 
 '''
 Goal 1:
-1. Create an if statement that the number of nodes in the tree range from 0-104
-2. Create an if statemebt that evaluates that the value of all nodes are from 0-104
-3. 
+1. Initialize the variable result to an empty array & stack to an empty stack
+2. Create an if statement that the number of nodes in the tree range from 0-104
+3. Create an if statemebt that evaluates that the value of all nodes are from 0-104
+4. Create a while loop to iterate over the tree for values that are not nill
+5. Use a post-order traversal method
+6. Push the post order traversal methods in a stack
+6. Append the result of the post order traversal method in the variable result
 '''
 
 '''
 Goal 2:
+1. result = []
+2. if length of root is >0
+  3. for node in root
+    4.
 '''
 
 '''
 Goals 3 & 4:
 '''
+root = [1,null,3,2,4,null,5,6]
