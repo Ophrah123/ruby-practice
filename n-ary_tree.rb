@@ -1,5 +1,5 @@
 '''
-Given the root of an n-ary tree, return the postorder traversal of its nodes"'" values.
+Given the root of an n-ary tree, return the postorder traversal of its nodes\'\ values.
 
 Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples)
 
@@ -41,3 +41,15 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 def postorder(root)
 
 end
+
+'''
+Goal 1:
+'''
+
+'''
+Goal 2:
+'''
+
+'''
+Goals 3 & 4:
+'''
