@@ -49,17 +49,27 @@ Goal2:
 Goals3&4:
 '''
 result = []
+n=0
 s="codeleet"
 indices = [4,5,6,7,0,2,1,3]
-s.length == indices.length == n
+if s.length == indices.length 
+    for x in indices do
+        n+=1
+    end
+end
+puts "value of s:#{s}"
+puts "value of n:#{n}"
+
+counter=0
 if n >= 1 && n <=100
     for num in indices do
-        characters = s[indices[0]]
+        characters = s[indices[counter]]
+        counter+=1
         result.append(characters)
     end
-
 end
-
+puts "value of result:#{result}"
+puts "value of joined result:#{result.join}"
 
 
 
