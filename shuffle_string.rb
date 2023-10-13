@@ -38,7 +38,7 @@ Goal1: Psuedocode
 
 '''
 Goal2:
-1. result is equal to an empty array, string s ="codeleet" and indices = [4,5,6,7,0,2,1,3]
+1. result is equal to an empty array, string s ="codeleet" and indices = [4,5,6,7,0,1,2,3]
 2. n = 0
 2. counter = 0
 3. If length of s and indices are equal, n = length of s
@@ -93,11 +93,7 @@ result = []
 n=0
 s="codeleet"
 indices = [4,5,6,7,0,1,2,3]
-if s.length == indices.length
-    for x in indices do
-        n+=1
-    end
-end
+n = s.length if s.length == indices.length
 puts "value of s:#{s}"
 puts "value of n:#{n}"
 
