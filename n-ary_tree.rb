@@ -56,9 +56,11 @@ Goal 1:
 '''
 Goal 2:
 1. result = []
-2. if length of root is >0
+2. if length of root is >0 && <=104, continue
   3. for node in root
-    4.
+      4. if node >0 && <=104, continue
+        5.post order traversal
+        6. result.append()
 '''
 
 '''
