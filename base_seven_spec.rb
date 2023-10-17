@@ -2,7 +2,7 @@
 
 describe "base seven representation of numbers" do
     def base_seven(number)
-        return "0"
+        "0"
     end
     example "base seven representation of 0 is 0" do
         expect(base_seven(0)).to eq("0")
