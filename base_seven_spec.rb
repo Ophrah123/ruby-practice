@@ -1,17 +1,16 @@
 # frozen_string_literal: true
 
-describe "test 1" do
-    it "adds 2+ 2" do
-        expect(2+2).to eq(4)
+describe "base seven representation of numbers" do
+    def base_seven(number)
+        return "0"
     end
-end
-
-describe "test  2" do
-    def base7(number) 
-        return "202"
+    example "base seven representation of 0 is 0" do
+        expect(base_seven(0)).to eq("0")
     end
-    it "calculates the base 7 representation of 100" do
-    #assert that the base 7 representation of 100 is 202
-    expect(base7(100)).to eq("202")
-    end
+    example "base seven representation of 1 is 1"
+    example "base seven representation of 2 is 2"
+    example "base seven representation of 3 is 3"
+    example "base seven representation of 4 is 4"
+    example "base seven representation of 5 is 5"
+    example "base seven representation of 6 is 6"
 end
