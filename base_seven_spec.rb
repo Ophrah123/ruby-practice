@@ -3,9 +3,9 @@
 describe "base seven representation of numbers" do
     def base_seven(number)
         if number == 0
-            "0"
+            0.to_s
         else
-            "1"
+            1.to_s
         end
     end
     example "base seven representation of 0 is 0" do
