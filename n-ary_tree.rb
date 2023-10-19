@@ -67,3 +67,16 @@ Goal 2:
 Goals 3 & 4:
 '''
 root = [1,null,3,2,4,null,5,6]
+result = []
+        if root is None:
+            return res
+        stack = []
+        stack.append(root)
+        while stack:
+            node = stack.pop()
+            res.insert(0, node.val)
+            if node.children is not None:
+                for c in node.children:
+                    if c is not None:
+                        stack.append(c)
+        return res
