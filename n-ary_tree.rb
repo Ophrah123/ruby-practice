@@ -56,5 +56,11 @@ root = [1,null,3,2,4,null,5,6]
 result = []
 stack = []
 puts root
-# if root.length == 0
-#   return result
+
+return None if root.length <= 0
+for i in root do
+  order(i)
+end
+result.append(root.val)
+order(root)
+print (result)
