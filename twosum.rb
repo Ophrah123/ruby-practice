@@ -30,3 +30,20 @@ Constraints:
 Only one valid answer exists.
 
 '''
+
+'''
+Goal 1: Pseudo code (plain english with exact goal)
+1. Initialize a result variable
+'''
+
+'''
+Goal 2: Test if each step produces needed result
+'''
+
+'''
+Goal 3: Ruby code 
+'''
+
+'''
+Goal 4:Print out debug information
+'''
