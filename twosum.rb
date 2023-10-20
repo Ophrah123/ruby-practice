@@ -43,12 +43,26 @@ Goal 1: Pseudo code (plain english with exact goal)
 Goal 2: Test if each step produces needed result
 result is equal to an empty array
 while the length of num >0 true
-  for x in num
+  for x in num (2 in [2,7,11,15])
+    if 2 +7 = 9
+      result=[0,1]
 '''
 
-'''
-Goal 3: Ruby code
-'''
+#Goal 3: Ruby code
+nums = [2,7,11,15], target = 9
+result = []
+while num.length >=0
+  for x in num do
+    if x+(x+1) = target
+      result=[index[x],index[x+1]]
+    else
+      return "none"
+
+    end
+
+  end
+
+
 
 '''
 Goal 4:Print out debug information
