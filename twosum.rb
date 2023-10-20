@@ -34,14 +34,20 @@ Only one valid answer exists.
 '''
 Goal 1: Pseudo code (plain english with exact goal)
 1. Initialize a result variable
+2. Create a while loop with condition: length of nums is greater than 0
+3. Create a for loop that evaluates if 2 indices in num add up to target
+4. append the num indices into result
 '''
 
 '''
 Goal 2: Test if each step produces needed result
+result is equal to an empty array
+while the length of num >0 true
+  for x in num
 '''
 
 '''
-Goal 3: Ruby code 
+Goal 3: Ruby code
 '''
 
 '''
