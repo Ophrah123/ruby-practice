@@ -2,8 +2,11 @@
 
 describe "base seven representation of numbers" do
     def base_seven(number)
-        return "10" if number == 7
-        number.to_s 
+        if number == 7
+            "10"
+        else
+            number.to_s
+        end
     end
     array=[0,1,2,3,4,5,6]
     array.each do | number |
