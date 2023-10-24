@@ -23,4 +23,12 @@ describe "base seven representation of numbers" do
         number=14
         expect(base_seven(number)).to eq("20")
     end
+    example "base seven representation of 21 is 30" do
+        number=21
+        expect(base_seven(number)).to eq("30")
+    end
+    example "base seven representation of 28 is 40" do
+        number=28
+        expect(base_seven(number)).to eq("40")
+    end
 end
