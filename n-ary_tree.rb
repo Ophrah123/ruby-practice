@@ -52,15 +52,17 @@ Goal 2:
 Goals 3 & 4:
 '''
 null = null
-root = [1,null,3,2,4,null,5,6]
+root = [1,nil,3,2,4,nil,5,6]
 result = []
-stack = []
-puts root
+stack = [root]
 
-return None if root.length <= 0
-for i in root do
-  order(i)
+puts result if root.nil?
+while(!stack.empty?)
+  top = stack.pop
+  result << top
+for child in top do
+  stack << child
 end
-result.append(root.val)
-order(root)
-print (result)
+end
+
+result.reverse
