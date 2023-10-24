@@ -14,21 +14,12 @@ describe "base seven representation of numbers" do
           expect(base_seven(number)).to eq(number.to_s)
       end
     end
-
-    example "base seven representation of 7 is 10" do
-        number=7
-        expect(base_seven(number)).to eq("10")
-    end
-    example "base seven representation of 14 is 20" do
-        number=14
-        expect(base_seven(number)).to eq("20")
-    end
-    example "base seven representation of 21 is 30" do
-        number=21
-        expect(base_seven(number)).to eq("30")
-    end
-    example "base seven representation of 28 is 40" do
-        number=28
-        expect(base_seven(number)).to eq("40")
+    number = 7
+    representation = (10 * number / 7).to_s
+    hash = {7 => '10', 14 => '20', 28 => '40'}
+    hash.each do |number, representation|
+        example "base seven representation of multiples of 7 is equal to multiples of 10 e.g #{number} has representation #{representation}" do
+            expect(base_seven(number)).to eq(representation)
+        end
     end
 end
