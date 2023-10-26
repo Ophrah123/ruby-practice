@@ -51,18 +51,31 @@ Goal 2:
 '''
 Goals 3 & 4:
 '''
-null = null
-root = [1,nil,3,2,4,nil,5,6]
-result = []
-stack = [root]
+#Definition for a binary tree node.
+class TreeNode
+    attr_accessor :val, :left, :right
+    def initialize(val = 0, left = nil, right = nil)
+        @val = val
+        @left = left
+        @right = right
+    end
+end
 
-puts result if root.nil?
-while(!stack.empty?)
-  top = stack.pop
-  result << top
-for child in top do
+root = [1,nil,3,2,4,nil,5,6]
+
+stack = [root]
+result = []
+puts [] if root.nil?
+
+while stack.any?
+  current = stack.pop
+  puts "Final Result:#{current}"
+
+  current.compact() if current.nil?
+  result << current
+end
+current.each do |child|
   stack << child
 end
-end
 
-result.reverse
+puts "Final Result:#{current.reverse().compact()}"
