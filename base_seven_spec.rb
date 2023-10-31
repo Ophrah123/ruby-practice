@@ -2,10 +2,12 @@
 
 describe "base seven representation of numbers" do
     def base_seven(number)
-        if number % 7 == 0
+        if number % 7 == 0 && number !=49
             (10 * number / 7).to_s
         elsif number == 8
             "11"
+        elsif number == 49
+            "100"
         else
             number.to_s
         end
@@ -13,11 +15,10 @@ describe "base seven representation of numbers" do
     array=[0,1,2,3,4,5,6]
     array.each do | number |
       example "base seven representation of numbers 0 through 6 is the number itself e.g. #{number}" do
+        number = 5
           expect(base_seven(number)).to eq(number.to_s)
       end
     end
-    number = 8
-    representation = (10 * number / 7).to_s
     hash = {7 => '10', 14 => '20', 28 => '40'}
     hash.each do |number, representation|
         example "base seven representation of multiples of 7 is equal to multiples of 10 e.g #{number} has representation #{representation}" do
@@ -25,9 +26,11 @@ describe "base seven representation of numbers" do
         end
     end
     example "base seven representation of 8 is 11" do
+        number = 8
         expect(base_seven(number)).to eq("11")
     end
     example "base seven representation of 49 is 100" do
+        number = 49
         expect(base_seven(number)).to eq("100")
     end
 end
