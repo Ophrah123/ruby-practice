@@ -2,12 +2,12 @@
 
 describe "base seven representation of numbers" do
     def base_seven(number)
-        if number % 7 == 0 && number !=49
+        if number == 49
+            "100"
+        elsif number % 7 == 0 
             (10 * number / 7).to_s
         elsif number == 8
             "11"
-        elsif number == 49
-            "100"
         else
             number.to_s
         end
