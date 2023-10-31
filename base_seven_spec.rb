@@ -3,8 +3,8 @@
 describe "base seven representation of numbers" do
     def base_seven(number)
         if number == 49
-            "100"
-        elsif number % 7 == 0 
+            (10**2).to_s
+        elsif number % 7 == 0
             (10 * number / 7).to_s
         elsif number == 8
             "11"
