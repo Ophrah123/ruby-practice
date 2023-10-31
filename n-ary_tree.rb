@@ -69,7 +69,7 @@ puts [] if root.nil?
 
 while stack.any?
   current = stack.pop
-  puts "Final Result:#{current}"
+  puts "Current Result:#{current}"
 
   current.compact() if current.nil?
   result << current

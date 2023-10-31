@@ -63,9 +63,6 @@ while nums.length >=0
 
   end
 end
-
-
-
 '''
 Goal 4:Print out debug information
 '''
