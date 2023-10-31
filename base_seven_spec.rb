@@ -3,7 +3,7 @@
 describe "base seven representation of numbers" do
     def base_seven(number)
         if (Math.log(number, 7) % Math.log(7, 7)).zero?
-            x = (Math.log10(number) / Math.log10(7)).to_i
+            x = (Math.log(number, 7) / Math.log(7, 7)).to_i
             (10**x).to_s
         elsif number % 7 == 0
             (10 * number / 7).to_s
