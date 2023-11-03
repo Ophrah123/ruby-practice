@@ -11,7 +11,7 @@ describe "base seven representation of numbers" do
             remainder = (number % 7)
             (10 + remainder).to_s
         else
-            number.to_s
+            (number / 7 + number % 7).to_s
         end
     end
     array=[0,1,2,3,4,5,6]
