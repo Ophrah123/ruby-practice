@@ -49,19 +49,26 @@ while the length of num >0 true
 '''
 
 #Goal 3: Ruby code
-nums = [2,7,11,15], target = 9
+nums = [2,7,11,15]
+target = 9
 result = []
-while nums.length >=0
-  for x in nums do
-    x.to_i
+for x in nums
+  puts x+1
+  puts x+(x+1)
+while nums.length() >=2 && nums.length() <=104
+  for x in nums
+    puts x+1
+    puts x+(x+1)
     if x+(x+1) == target
       result=[index[x],index[x+1]]
+      puts "Final Result:-#{result}"
     else
       return "none"
 
     end
 
   end
+end
 end
 '''
 Goal 4:Print out debug information
