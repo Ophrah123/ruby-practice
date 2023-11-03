@@ -6,7 +6,8 @@ describe "base seven representation of numbers" do
             index = (Math.log(number, 7) / Math.log(7, 7)).to_i
             (10**index).to_s
         elsif number % 7 == 0
-            (10 * number / 7).to_s
+            remainder = number % 7
+            (10 * (number / 7) + remainder).to_s
         elsif number > 7
             remainder = (number % 7)
             (10 * (number / 7) + remainder).to_s
