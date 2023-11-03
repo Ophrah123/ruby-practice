@@ -52,23 +52,27 @@ while the length of num >0 true
 nums = [2,7,11,15]
 target = 9
 result = []
-for x in nums
-  puts x+1
-  puts x+(x+1)
-while nums.length() >=2 && nums.length() <=104
-  for x in nums
-    puts x+1
-    puts x+(x+1)
-    if x+(x+1) == target
-      result=[index[x],index[x+1]]
-      puts "Final Result:-#{result}"
+i = 0
+if nums.length() >=2 && nums.length() <=104
+  for x in nums do
+    puts ""
+    puts "New Iteration:#{i+=1}"
+    puts "Value+1:#{x+1}"
+    puts "Value + value+1:#{x+(x+1)}"
+    puts "Need current x value:#{nums[x]}"
+    cur_index = nums.index(x)
+    puts "Current index:#{nums.index(x)}"
+    next_index = nums.index(x)+1
+    puts "Next index:#{nums.index(x)+1}"
+    if x+next_index == target
+      result=[cur_index,next_index]
+      puts "Final Result=#{result}"
     else
-      return "none"
+      puts "none"
 
     end
 
   end
-end
 end
 '''
 Goal 4:Print out debug information
