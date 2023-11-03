@@ -9,10 +9,10 @@ describe "base seven representation of numbers" do
             (10 * number / 7).to_s
         elsif number > 7
             remainder = (number % 7)
-            (10 *(number / 7) + remainder).to_s
+            (10 * (number / 7) + remainder).to_s
         else
             remainder = number % 7
-            ((number / 7) + remainder).to_s
+            (10 * (number / 7) + remainder).to_s
         end
     end
     array=[0,1,2,3,4,5,6]
