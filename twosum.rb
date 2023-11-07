@@ -60,12 +60,13 @@ if nums.length() >=2 && nums.length() <=104
     puts "Value+1:#{x+1}"
     puts "Value + value+1:#{x+(x+1)}"
     puts "Need current x value:#{nums[x]}"
+    nums[cur_index]#=>
     cur_index = nums.index(x)
     puts "Current index:#{nums.index(x)}"
     next_index = nums.index(x)+1
     puts "Next index:#{nums.index(x)+1}"
     if x+next_index == target
-      result=[cur_index,next_index]
+      result=[nums[cur_index]#=>,nums[cur_index]#=>]
       puts "Final Result=#{result}"
     else
       puts "none"

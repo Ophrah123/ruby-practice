@@ -2,14 +2,18 @@
 
 describe "base seven representation of numbers" do
     def base_seven(number)
-        if number == 49
-            (10**2).to_s
+        if (Math.log(number, 7) % Math.log(7, 7)).zero?
+            index = (Math.log(number, 7) / Math.log(7, 7)).to_i
+            (10**index).to_s
         elsif number % 7 == 0
-            (10 * number / 7).to_s
-        elsif number == 8
-            "11"
+            remainder = number % 7
+            (10 * (number / 7) + remainder).to_s
+        elsif number > 7
+            remainder = (number % 7)
+            (10 * (number / 7) + remainder).to_s
         else
-            number.to_s
+            remainder = number % 7
+            (10 * (number / 7) + remainder).to_s
         end
     end
     array=[0,1,2,3,4,5,6]
